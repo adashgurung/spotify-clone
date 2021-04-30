@@ -1,0 +1,33 @@
+.sidebar {
+  /*   border: 1px solid black; */
+  height: 100vh; /* 100 view height, use fullscreen of the available height */
+  flex: 0.2; /* take 20% of the screen */
+  color: white;
+  background-color: #040404;
+  min-width: 230px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.sidebar__logo {
+  margin-right: auto;
+  height: 70px;
+  padding: 10px;
+}
+
+.sidebar > hr {
+  border: 1px solid #282828;
+  width: 90%;
+  margin: 5px auto;
+}
+
+.gap {
+  margin-bottom: 10px;
+}
+
+.sidebar__title {
+  margin-left: 18px;
+  margin-bottom: 20px;
+  padding: 5px;
+  font-size: 13px;
+  color: grey;
+}

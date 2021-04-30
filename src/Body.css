@@ -1,0 +1,94 @@
+.body {
+  /* border: 1px solid red; */
+  flex: 0.8; /* take 80% of the body */
+  height: 100vh; /* 100 view height, use fullscreen of the available height */
+  padding: 30px;
+  color: white;
+
+  overflow-y: overlay; /* prevents from over flowing */
+  background: linear-gradient(rgb(91, 87, 115), rgba(0, 0, 0, 1));
+}
+
+hr {
+  border: 0.5px solid #282828;
+  width: 90%;
+  margin: 5px auto;
+}
+.body__info > img {
+  height: 20vw; /* 20 veiw width change the view based on how big or small the screen is*/
+  margin: 0 20px; /* top and bottom 0px and left and right 20px  */
+  box-shadow: 0 4px 60px rgba(0, 0, 0, 1);
+}
+.body__info {
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+}
+
+.body__infoText {
+  flex: 1;
+}
+
+.body__infoText > h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.body__infoText > p {
+  font-size: 14px;
+  color: lightgrey;
+}
+.body__infoText > strong {
+  font-size: 12px;
+}
+
+.body__shuffle {
+  font-size: 80px !important; /* overiding */
+  color: #1ed760;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* .try {
+  border-radius: 50px;
+  background-size: 200px;
+  background-color: white;
+  align-items: center;
+  background-size: 99px;
+} */
+
+.moreHorizonIcon {
+  transition: 200ms color ease-in;
+}
+
+.moreHorizonIcon {
+  color: grey;
+}
+.moreHorizonIcon:hover {
+  transform: scale(1.08);
+  color: white;
+}
+
+.body__shuffle:hover,
+.favouriteIcon:hover {
+  transition: 100ms transform ease-in;
+  transform: scale(1.08); /* if mouse on top increases size */
+  color: #1ed760;
+}
+.body__songs {
+  z-index: 1;
+  margin: 20px -30px; /* up and down 20 left and right -30 */
+}
+.body__icons {
+  display: flex;
+  align-items: center;
+}
+
+.body__icons > .MuiSvgIcon-root {
+  margin-right: 25px; /* give icons some margins */
+}
+
+.body::-webkit-scrollbar {
+  display: none; /* remove scroll bar */
+}

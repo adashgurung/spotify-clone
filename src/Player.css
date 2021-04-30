@@ -1,0 +1,3 @@
+.player__body {
+  display: flex; /* flex by default line them in rows */
+}
